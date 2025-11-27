@@ -140,11 +140,11 @@ p {
 }
 
 input[type="checkbox"]:checked + span::after {
-    content: "✅"
+    content: "✅";
 }
 
 input[type="checkbox"]:checked + p::after {
-    content: "\1F389"
+    content: "\1F389";
 }
 
 #completed-text {
