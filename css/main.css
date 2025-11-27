@@ -1,0 +1,201 @@
+body {
+    background-color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url("/images/backgroundtodo.jpg");
+    padding-bottom: 230px;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 0px black, 
+                 2px 2px 0px black,
+                 3px 3px 0px black,
+                 4px 4px 0px black,
+                 5px 5px 0px black,
+                 6px 6px 0px black,
+                 7px 7px 0px black,
+                 8px 8px 10px white;
+    background: #9022c3;
+background: linear-gradient(180deg,rgba(144, 34, 195, 1) 0%, rgba(230, 230, 230, 1) 50%, rgba(144, 34, 195, 1) 100%);
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 0;
+}
+
+header, p {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+article {
+    width: 400px;
+    border: 4px solid white;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 0;
+}
+
+article > h2 {
+    color: whitesmoke;
+    text-shadow: 1px 1px 0px black, 
+                 2px 2px 0px black,
+                 3px 3px 0px black,
+                 4px 4px 0px black,
+                 5px 5px 0px black,
+                 6px 6px 0px black,
+                 7px 7px 0px black,
+                 8px 8px 10px white;
+    padding: 4px 8px;
+}
+
+article:first-of-type {
+    /* border: 4px solid gray; */
+    border-color:#9022c3;
+}
+
+#heading-1 {
+    border-bottom: solid 4px #9022c3;
+}
+
+#heading-2 {
+    border-bottom: solid 4px #9022c3;
+}
+
+#heading-3 {
+    border-bottom: solid 4px #9022c3;
+}
+
+#inprogress {
+    border-color: #9022c3;
+}
+
+#inprogress h2 {
+    color: whitesmoke;
+    text-shadow: 1px 1px 0px black, 
+                 2px 2px 0px black,
+                 3px 3px 0px black,
+                 4px 4px 0px black,
+                 5px 5px 0px black,
+                 6px 6px 0px black,
+                 7px 7px 0px black,
+                 8px 8px 10px white;
+}
+
+#done {
+    border-color: #9022c3;
+}
+
+#done h2 {
+    color: whitesmoke;
+    text-shadow: 1px 1px 0px black, 
+                 2px 2px 0px black,
+                 3px 3px 0px black,
+                 4px 4px 0px black,
+                 5px 5px 0px black,
+                 6px 6px 0px black,
+                 7px 7px 0px black,
+                 8px 8px 10px white;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 6px 8px;
+    text-transform: uppercase;
+}
+
+p {
+    display: inline;
+}
+
+.todo li:nth-child(odd) {
+    background-color: rgba(212, 0, 255, 0.5);
+}
+
+.inprogress li:nth-child(odd) {
+    background-color: rgba(212, 0, 255, 0.5);
+}
+
+.done li:nth-child(odd) {
+    background-color: rgba(212, 0, 255, 0.5);
+}
+
+input[type="checkbox"]:checked + span::after {
+    content: "✅"
+}
+
+input[type="checkbox"]:checked + p::after {
+    content: "\1F389"
+}
+
+#completed-text {
+    text-align: center;
+    padding: 30px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 0px black, 
+                 2px 2px 0px black,
+                 3px 3px 0px black,
+                 4px 4px 0px black,
+                 5px 5px 0px black,
+                 6px 6px 0px black,
+                 7px 7px 0px black,
+                 8px 8px 10px white;
+}
+
+#todo {
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.9);
+}
+
+#inprogress {
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.9);
+}
+
+#done {
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.9);
+}
+
+#main-footer {
+    text-align: center;
+    background: #9022c3;
+    background: linear-gradient(180deg,rgba(144, 34, 195, 1) 0%, rgba(230, 230, 230, 1) 50%, rgba(144, 34, 195, 1) 100%);
+    color: whitesmoke;
+    text-shadow: 1px 1px 0px black, 
+                 2px 2px 0px black,
+                 3px 3px 0px black,
+                 4px 4px 0px black,
+                 5px 5px 0px black,
+                 6px 6px 0px black,
+                 7px 7px 0px black,
+                 8px 8px 10px white;
+    padding-bottom: 45px;
+
+}
+
+#main-footer p {
+    font-size: 12px;
+}
+
+#main-footer h3 {
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 35px;
+}
